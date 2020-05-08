@@ -3,4 +3,4 @@ Interpreters for some of my esolangs.
 
 ## Esolangs included
 
-* Regimin
+* [Regimin](https://www.esolangs.org/wiki/Regimin)
