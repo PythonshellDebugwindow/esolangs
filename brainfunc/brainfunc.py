@@ -73,7 +73,7 @@ def interpret(code, f=(False,[])):
     print("\n\033[38;2;0;255;0m=>", cells, "\033[0;0;0m")
     cells, cur_cell = [0], 0
 
-print("Brainfunc interpreter written by @MasonALM (PythonshellDebugwindow)")
+print("Brainfunc interpreter")
 
 while True:
   interpret(input("> "))
