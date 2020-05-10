@@ -47,10 +47,16 @@ function interpret(code) {
         console.log(ivalue(1).toString());
         break;
       case "J":
+        if(ivalue(1) >= code.length) {
+          console.log("JUMPERROR LINE " + i + "!");
+        }
         i = ivalue(1) - 1;
         break;
       case "N":
         if(ivalue(2) != 0) {
+          if(ivalue(1) >= code.length) {
+            console.log("JUMPERROR LINE " + i + "!");
+          }
           i = ivalue(1) - 1;
         }
         break;
@@ -58,7 +64,7 @@ function interpret(code) {
         return;
       default:
         if(code[i] != "") {
-          console.log("ERROR LINE " + i + "!");
+          console.log("SYNTAXERROR LINE " + i + "!");
           return;
         }
     }
