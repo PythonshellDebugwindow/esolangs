@@ -49,6 +49,7 @@ function interpret(code) {
       case "J":
         if(ivalue(1) >= code.length) {
           console.log("JUMPERROR LINE " + i + "!");
+          return;
         }
         i = ivalue(1) - 1;
         break;
@@ -56,6 +57,7 @@ function interpret(code) {
         if(ivalue(2) != 0) {
           if(ivalue(1) >= code.length) {
             console.log("JUMPERROR LINE " + i + "!");
+            return;
           }
           i = ivalue(1) - 1;
         }
