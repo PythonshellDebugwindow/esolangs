@@ -1,5 +1,8 @@
 import pygame, sys
-color = sys.stdout.shell
+if hasattr(sys.stdout, "shell"):
+  write_err = lambda s: sys.stdout.shell.write(s + "\n", "KEYWORD")
+else:
+  write_err = lambda s: print("\033[38;2;255;0;0m" + s + "\033[0;0;0m")
 
 SCREEN_SIZE = 400
 PX_PER_ROW = 50
@@ -7,7 +10,7 @@ PX_SIZE = SCREEN_SIZE / PX_PER_ROW
 visify_vardict = {}
 
 def err(etype, msg):
-  color.write(f"{etype}: {msg}\n", "KEYWORD")
+  write_err(f"{etype}: {msg}")
   pygame.quit()
   sys.exit()
 
