@@ -13,3 +13,4 @@ Interpreters for some of my esolangs.
 * [Regimin](https://www.esolangs.org/wiki/Regimin)
 * [Visify](https://www.esolangs.org/wiki/Visify)
 * [—-](https://www.esolangs.org/wiki/—-)
+* [↑110010000100110110010](https://www.esolangs.org/wiki/↑110010000100110110010)
