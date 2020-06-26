@@ -8,6 +8,7 @@ Interpreters for some of my esolangs.
 * [Brainfunc](https://www.esolangs.org/wiki/Brainfunc)
 * [Eso2D](https://www.esolangs.org/wiki/Eso2D)
 * [Line Feed](https://www.esolangs.org/wiki/Line_Feed)
+* [N Refine](https://esolangs.org/wiki/N_Refine)
 * [PlusOrMinus](https://www.esolangs.org/wiki/PlusOrMinus)
 * [PlusOrMinus 2](https://www.esolangs.org/wiki/PlusOrMinus_2)
 * [Regimin](https://www.esolangs.org/wiki/Regimin)
