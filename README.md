@@ -4,6 +4,7 @@ Interpreters for some of my esolangs.
 ## Esolangs included
 * [Alphaprint](https://www.esolangs.org/wiki/Alphaprint)
 * Base2
+* [Blues machine](https://www.esolangs.org/wiki/Blues_machine)
 * [Bout](https://www.esolangs.org/wiki/Bout)
 * [Brainfunc](https://www.esolangs.org/wiki/Brainfunc)
 * [Eso2D](https://www.esolangs.org/wiki/Eso2D)
