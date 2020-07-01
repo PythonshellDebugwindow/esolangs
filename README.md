@@ -12,6 +12,7 @@ Interpreters for some of my esolangs.
 * [N Refine](https://esolangs.org/wiki/N_Refine)
 * [PlusOrMinus](https://www.esolangs.org/wiki/PlusOrMinus)
 * [PlusOrMinus 2](https://www.esolangs.org/wiki/PlusOrMinus_2)
+* [Queuenanimous](https://www.esolangs.org/wiki/Queuenanimous)
 * [Regimin](https://www.esolangs.org/wiki/Regimin)
 * [Visify](https://www.esolangs.org/wiki/Visify)
 * [—-](https://www.esolangs.org/wiki/—-)
