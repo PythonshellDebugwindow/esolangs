@@ -20,5 +20,3 @@ def blues_machine(code):
       print(dict(mem.items()))
     elif code[i][0][0] != "#":
       raise SyntaxError("blues machine: invalid syntax")
-
-blues_machine(open("program.blues").read())
