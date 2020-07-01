@@ -3,7 +3,7 @@ def brkmap(s):
   r = {}
   for i, c in enumerate(s):
     if c == "[":
-      t.push(i)
+      t.append(i)
     elif c == "]":
       r[t.pop()] = i
   return r
@@ -15,10 +15,10 @@ def queuenanimous(code):
   b = brkmap(code)
   rb = {v: k for k, v in b}
   while 0 <= i < clen:
-    if code[i] == "0": q.push(0)
-    elif code[i] == "+": q.push(q.pop(0) + 1)
-    elif code[i] == "-": q.push(q.pop(0) - 1)
-    elif code[i] == ">": q.push(q.pop(0))
+    if code[i] == "0": q.append(0)
+    elif code[i] == "+": q.append(q.pop(0) + 1)
+    elif code[i] == "-": q.append(q.pop(0) - 1)
+    elif code[i] == ">": q.append(q.pop(0))
     elif code[i] == "[" and q.pop(0) == 0: i = b[i]
     elif code[i] == "]": i = rb[i]
     i += 1
