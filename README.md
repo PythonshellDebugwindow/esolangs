@@ -8,7 +8,7 @@ Interpreters for some of my esolangs.
 * [Blues machine](https://www.esolangs.org/wiki/Blues_machine)
 * [Bout](https://www.esolangs.org/wiki/Bout)
 * [Brainfunc](https://www.esolangs.org/wiki/Brainfunc)
-* Depend
+* [Depend](https://github.com/PythonshellDebugwindow/esolangs/blob/master/depend/README.md)
 * [Eso2D](https://www.esolangs.org/wiki/Eso2D)
 * [Line Feed](https://www.esolangs.org/wiki/Line_Feed)
 * [N Refine](https://esolangs.org/wiki/N_Refine)
