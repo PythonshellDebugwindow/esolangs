@@ -1,0 +1,6 @@
+VAR-SET("first-input", VAR-SET("last-input", VAR-SET("input", INPUT())))
+WHILE-NEQ(VAR-GET("input"), "", PRINT(VAR-GET("input")), IF-NEQ(VAR-SET("input", INPUT()), "", VAR-SET("last-input", VAR-GET("input"))))
+PRINT("You first entered:")
+PRINT(VAR-GET("first-input"))
+PRINT("You last entered:")
+PRINT(VAR-GET("last-input"))
