@@ -4,7 +4,8 @@ def n_refine(code, debug=True):
   try:
     code = list(map(int, code.split()))
   except ValueError:
-    print("n-refine.py: Error: invalid syntax")
+    my_filename = sys.argv[0].replace("\\", "/").split("/")[-1]
+    print(f"{my_filename}: Error: invalid syntax")
     sys.exit(1)
   numbers = {}
   i = 0
@@ -23,11 +24,12 @@ def n_refine(code, debug=True):
     i += 2
 
 if __name__ == "__main__":
+  my_filename = sys.argv[0].replace("\\", "/").split("/")[-1]
   if len(sys.argv) <= 1:
-    print("Usage: n-refine.py [OPTION] FILE")
-    print("Type 'n-refine.py --help' for more information")
+    print(f"Usage: {my_filename} [OPTION] FILE")
+    print(f"Type '{my_filename} --help' for more information")
   elif "--help" in sys.argv:
-    print("""Usage: n-refine.py [OPTION] FILE
+    print(f"""Usage: {my_filename} [OPTION] FILE
 FILE must not start with a dash.
 Options:
     -d, --debug  Use debug mode (prints the current instruction before executing)
@@ -41,6 +43,6 @@ Options:
     elif any(map(lambda a: a[0] != "-", sys.argv)):
       code = open(tuple(filter(lambda a: a[0] != "-", sys.argv))[0]).read()
     else:
-      print("n-refine.py: Error: no FILE provided")
+      print(f"{my_filename}: Error: no FILE provided")
       sys.exit(1)
     n_refine(code, "-d" in sys.argv or "--debug" in sys.argv)
