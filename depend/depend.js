@@ -1,4 +1,4 @@
-function depend(code)
+module.exports = function depend(code)
 {
   code = code.split("\n");
   var events = {};
