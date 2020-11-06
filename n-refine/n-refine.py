@@ -30,18 +30,17 @@ if __name__ == "__main__":
     print(f"Type '{my_filename} --help' for more information")
   elif "--help" in sys.argv:
     print(f"""Usage: {my_filename} [OPTION] FILE
-FILE must not start with a dash.
+FILE should not start with a dash.
 Options:
     -d, --debug  Use debug mode (prints the current instruction before executing)
     --help       Print this message
     -i, --input  Get the code from STDIN instead of reading from a file""")
   else:
     code = ""
-    sys.argv.pop(0)
     if "-i" in sys.argv or "--input" in sys.argv:
-      code = input("Enter code:")
-    elif any(map(lambda a: a[0] != "-", sys.argv)):
-      code = open(tuple(filter(lambda a: a[0] != "-", sys.argv))[0]).read()
+      code = input("Enter code: ")
+    elif any(map(lambda a: a[0] != "-", sys.argv[1:])):
+      code = open(tuple(filter(lambda a: a[0] != "-", sys.argv[1:]))[0]).read()
     else:
       print(f"{my_filename}: Error: no FILE provided")
       sys.exit(1)
