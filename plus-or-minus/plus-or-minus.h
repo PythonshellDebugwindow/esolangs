@@ -1,3 +1,6 @@
+#ifndef _PLUS_OR_MINUS_H
+#define _PLUS_OR_MINUS_H
+
 #include <stdio.h>
 
 void plusOrMinus(const char *code)
@@ -17,3 +20,5 @@ void plusOrMinus(const char *code)
   }
   printf("\n\033[32;1m=> %d\033[0m\n", acc);
 }
+
+#endif //_PLUS_OR_MINUS_H
