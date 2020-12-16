@@ -25,7 +25,7 @@ module.exports = function depend(code)
       else
         for(var dependency of events[event])
           if(!(dependency in events))
-            events[event].splice(event.indexOf(dependency), 1);
+            events[event].splice(events[event].indexOf(dependency), 1);
     }
   }
 }
