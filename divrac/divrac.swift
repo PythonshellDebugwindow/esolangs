@@ -53,7 +53,6 @@ func divrac(_ code: String, useIO: Bool = true) throws
       {
         if n.val == -1
         {
-          print("JUMPING NOW",a.val)
           /*
             Since lines are 1-indexed in Divrac but arrays are 0-indexed
             in Swift, and the IP will be incremented by 1 at the end of
