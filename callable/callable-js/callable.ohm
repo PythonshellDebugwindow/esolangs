@@ -6,7 +6,7 @@ Callable
     | id "(" Arg ")"            --oneArg
     | id "(" Arg ("," Arg)+ ")" --multiArgs
   Arg = Call | string
-	string = "\"" strchr* "\""
+  string = "\"" strchr* "\""
   strchr = ~"\"" ~"\"" any
   id = (letter | "-")+
 }
