@@ -3,7 +3,6 @@ import sys, re
 def alphaprint(code):
   r = "^(abcdefghijklmnopqrstuvwxyz)*(a(b(c(d(e(f(g(h(i(j(k(l(m(n(o(p(q(r(s(t(u(v(w(x(y(z?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?$"
   if re.match(r, code, re.I):
-    last=""
     for i in range(len(code)):
       if code[i].isupper():
         print(end=chr(i % 256))
