@@ -5,7 +5,7 @@ function interpret(code) {
   code = code.split("\n");
   
   /* This cellSequence function has to be here, else the cells would have to
-  be passed as paramaters */
+  be passed as parameters */
   function cellSequence(str) {
     let result = "";
     for(let i = 0; i < str.length; i++) {
