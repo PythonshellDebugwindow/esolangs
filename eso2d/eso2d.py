@@ -1,49 +1,34 @@
-import random
+import sys, random
 
 def print_err(s):
   print("\033[38;2;255;0;0m" + s + "\033[0;0;0m")
+  sys.exit(1)
 
-print("Welcome to Eso2D!")
-choice = None
-while choice != "1" and choice != "2":
-  if choice != None:
-    print("Invalid choice")
-  print("  1. Run example code")
-  print("  2. Run your own code")
-  choice = input("Choose one: ")
-if choice == "1":
-  filename = input("Enter file name (in 'examples' folder): ").replace(" ", "-").split("/")[-1].split(".")[0].lower()
-else:
-  print("Enter code (or nothing to run what you've entered):")
-  code = []
-  s = input("> ")
-  while s != "":
-    code.append(s)
-    s = input("> ")
-  filename = None
+if __name__ != "__main__":
+  sys.exit()
+
+if len(sys.argv) < 2:
+  print("Eso2D: missing file operand")
+  sys.exit(1)
+
+filename = sys.argv[1]
 
 try:
-  if not filename is None:
-    code = open("examples/" + filename + ".e2d").read().split("\n")
-  if len(code) < 1:
-    code.append([" "])
+  contents = open(filename).read()
+  code = contents.split("\n") if len(contents) > 0 else [" "]
 except FileNotFoundError:
-  print_err("No file named 'examples/" + filename + ".e2d'")
+  print(f"Eso2D: {filename}: no such file or directory")
+  sys.exit(1)
 except IsADirectoryError:
-  print_err("No filename entered")
+  print("Eso2D: cannot run a directory")
+  sys.exit(1)
 else:
-  
-  
-  CODE_WIDTH, CODE_HEIGHT = 0, len(code)
-  for line in code:
-    if len(line) > CODE_WIDTH:
-      CODE_WIDTH = len(line)
-  for i in range(len(code)):
+  CODE_WIDTH, CODE_HEIGHT = max(map(len, code)), len(code)
+  for i in range(CODE_HEIGHT):
     if len(code[i]) < CODE_WIDTH:
       code[i] = code[i].ljust(CODE_WIDTH, " ")
   mem, mem_index, row, col, direction = [0], 0, 0, 0, 1
   # direction: 0 = up, 1 = right, 2 = down, 3 = left
-  
   while True:
     c = code[row][col]
     #print("Char:", c) # DEBUG
@@ -76,7 +61,7 @@ else:
     elif c == "&":
       try:
         mem[mem_index] = ord(input(" ")[0]) % 256
-      except IndexError:
+      except IndexError: #Empty input given
         mem[mem_index] = 10
     elif c == "$":
       try:
@@ -161,11 +146,9 @@ else:
     elif c == "{":
       mem_index -= 1
       if mem_index == -1:
-        print_err("Negative memory index")
-        break
+        print_err(f"Negative memory index at char {col + 1} of line {row + 1}")
     elif c != " ":
-      print_err("Invalid character '" + c + "' in source code")
-      break
+      print_err(f"Invalid character '{c}' encountered at char {col + 1} of line {row + 1}")
     
     if direction == 0:
       row -= 1
@@ -183,8 +166,8 @@ else:
       col -= 1
       if col < 0:
         col = CODE_WIDTH - 1
-    if mem[mem_index] < 0:
-      mem[mem_index] = 255
-    elif mem[mem_index] > 255:
-      mem[mem_index] = 0
-  print("\n\033[38;2;0;255;0m=>", mem, "\033[0;0;0m")
+    
+    if mem[mem_index] < 0 or mem[mem_index] > 255:
+      mem[mem_index] %= 256
+  
+  print("\n\033[38;2;0;255;0m=>", mem, "\nCP =", mem_index, "\033[0;0;0m")
