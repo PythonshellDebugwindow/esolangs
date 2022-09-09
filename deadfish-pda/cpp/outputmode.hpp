@@ -1,0 +1,10 @@
+#ifndef _OUTPUTMODE_HPP
+#define _OUTPUTMODE_HPP
+
+#define NUMERIC_OUTPUT 0
+#define ASCII_OUTPUT 1
+
+extern int OUTPUT_MODE;
+
+#endif //_OUTPUTMODE_HPP
+

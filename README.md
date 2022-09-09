@@ -1,5 +1,5 @@
 # esolangs
-Interpreters for some of my esolangs.
+Interpreters for esolangs.
 
 ## Esolangs included
 * [_](https://www.esolangs.org/wiki/＿)
@@ -9,7 +9,8 @@ Interpreters for some of my esolangs.
 * [Bout](https://www.esolangs.org/wiki/Bout)
 * [Brainfunc](https://www.esolangs.org/wiki/Brainfunc)
 * [Callable](https://www.esolangs.org/wiki/Callable)
-* [Depend](https://github.com/PythonshellDebugwindow/esolangs/blob/master/depend/README.md)
+* [Deadfish PDA](https://esolangs.org/wiki/Deadfish_PDA)
+* [Depend](https://esolangs.org/wiki/Depend)
 * [Divrac](https://www.esolangs.org/wiki/Divrac)
 * [Eso2D](https://www.esolangs.org/wiki/Eso2D)
 * [Line Feed](https://www.esolangs.org/wiki/Line_Feed)
