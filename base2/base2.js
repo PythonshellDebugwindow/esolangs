@@ -106,7 +106,7 @@ function base2(code)
 					if(i.length === 1)
 					{
 						codeHasError = true;
-				    codeError = "Line " + (index + 1) + ": Invalid syntax.";
+				   		codeError = "Line " + (index + 1) + ": Invalid syntax.";
 						break outerLoop;
 					}
 					var cellSeq = cellSequence(i[1]);
@@ -124,7 +124,7 @@ function base2(code)
 					{
 					    cellSeq = cellSequence(i[1]);
 					    if(cellSeq === -1)
-						codeHasError = true;
+							codeHasError = true;
 					}
 					if(codeHasError)
 					{
