@@ -1,0 +1,8 @@
+T
+  t TTTTT -"TT" TTTT 0
+  tt TTTTT -"T" TTTT 2
+  ttt TTTTT -"TTTTTTT" TTTT 0
+  tttt TTTTT -"TT" TTTT 4
+  ttttt TTTTT -"T" TTTT 1
+  -"T " TTTTTTTT t TTTTTTTT tt TTTTTTTT ttt TTTTTTTT tttt TTTTTTTT ttttt
+TT

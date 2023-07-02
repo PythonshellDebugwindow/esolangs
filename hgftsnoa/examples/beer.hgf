@@ -1,0 +1,77 @@
+T
+  tttttttttttttttttttt 99
+TT
+
+tttttttttttttttttttt TTTTT tt T
+  tttttt TTTTT -"T" TTTT 4
+  ttttttt TTTTT -"T" TTTT 1
+  ttttt TTTTT -"TT" TTTT 4
+
+  tttt TTTTT -"ttttttTTTTTTT"
+  tttt TTTTT -"T" TTTT 2 TTTTTTTT tttt
+  tttt TTTTT -"TTT" TTTT 1 TTTTTTTT tttt
+  tttt TTTTT -"TTTTTT" TTTT 2 TTTTTTTT " " TTTTTTTT tttt
+  tttt TTTTT -"T" TTTT 0 TTTTTTTT tttt
+  tttt TTTTT -"TTTT" TTTT 1 TTTTTTTT tttt
+  tttt TTTTT -"TTTTTT" TTTT 3 TTTTTTTT -" tttt"
+  tttt TTTTT -" tttttt" TTTTTTTT tttt
+
+  ttt TTTTT -"TTTTTTT" TTTT 1
+  ttt TTTTT ttttt TTTTTTTT ttttttt TTTTTTTT ttttttt TTTTTTTT ttt
+  ttt TTTTT -"TTT" TTTT 1 TTTTTTTT -" ttt"
+  ttt TTTTT " " TTTTTTTT tttttt TTTTTTTT ttt
+  tttttttttt TTTTT -"T" TTTT 2 TTTTTTTT ttttttt
+  t TTTTT -"TTTT" TTTT 1
+  tttttttttt TTTTT t TTTTTTTT t TTTTTTTT tttttttttt
+  tttttttttt TTTTT tttttt TTTTTTTT tttttttttt
+  tttttttttt TTTTT -" ttttt" TTTTTTTT tttttttttt
+
+  TTT tt TTTTT 1
+    ttttttttttttttt TTTTT ttt TTTTTTTT tttt
+    tttttttt TTTTT tttttttttt TTTTTTTT ttt TTTTTTTT tttt
+  TTTTTTT
+    ttttttttttttttttt TTTTT ttt TTTTTTTT tttt
+    ttttttttttttttttt TTTTT tttttttttt TTTTTTTT ttttttttttttttttt
+    tttttttttttttttt TTTTT ttt TTTTTTTT tttt
+    tttttttt TTTTT -"TTTTT" TTTT 1 TTTTTTTT tttttttttttttttt
+    tttttttt TTTTT tttttttttt TTTTTTTT tttttttt
+  TTTTTT
+
+  -"tt" TTTTTTTT tttttttt TTTTTTTT " -"
+  TTT tt TTTTT 1
+    -"tt" TTTTTTTT tttttttttt TTTTTTTT ttt
+  TTTTTTT
+    ttttttttttt TTTTT -"TTTTT" TTTT 1
+    -"tt" TTTTTTTT tttttttttt TTTTTTTT ttttttttttt TTTTTTTT ttt
+  TTTTTT
+
+  tttt TTTTT -"TTT" TTTT 1
+  ttt TTTTT -"TTTTTTT" TTTT 1 TTTTTTTT -" TTTT" TTTTTTTT " -"
+  ttt TTTTT tttt TTTTTTTT ttttttt TTTTTTTT ttt
+  ttt TTTTT -"TTTTT" TTTT 1 TTTTTTTT ttt
+  ttt TTTTT -"TTTTTT" TTTT 3 TTTTTTTT ttt
+  ttt TTTTT -"TTTTTTTT" TTTT 0 TTTTTTTT ttt
+  ttt TTTTT -"TTTTTTT" TTTT 1 TTTTTTTT ttt
+  ttt TTTTT -"TTTT" TTTT 1 TTTTTTTT ttt
+  ttt TTTTT tttttt TTTTTTTT tttt TTTTTTTT -"tttt - " TTTTTTTT ttt
+  ttt TTTTT -"TTTTTT" TTTT 3 TTTTTTTT -"ttttttt ttt"
+  ttt TTTTT -"TTTT" TTTT 1 TTTTTTTT -" tttttt" TTTTTTTT ttt
+  ttt TTTTT -"T" TTTT 2 TTTTTTTT -"TTTttt"
+  ttt
+
+  tt TTTTT tt TTTTTTTT -1
+
+  TTT tt
+    TTT tt TTTTT 1
+      "1" TTTTTTTT ttttttttttttttttt
+    TTTTTTT
+      -"tt" TTTTTTTT tttttttt
+    TTTTTT
+    ""
+    tttttttttttttttttttt tt
+  TTTTTTT
+    ttttttttttttttt TTTTT -"TTTTT" TTTT 1 TTTTTTTT ttttttttttttttt
+    ttttttttttttttt TTTTT tttttttttt TTTTTTTT ttttttttttttttt
+    -"TTTTTT" TTTT 3 TTTTTTTT tttttt TTTTTTTT ttttttttttttttt
+  TTTTTT
+TT

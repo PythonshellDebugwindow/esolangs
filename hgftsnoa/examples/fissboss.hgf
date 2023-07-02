@@ -1,0 +1,28 @@
+T
+  tt TTTTT -"TTTTT" TTTT 1
+  ttt TTTTT -"TTT" TTTT 1 TTTTTTTT -"TTTTTtt"
+  tttt TTTTT -"T" TTTT 4 TTTTTTTT tt TTTTTTTT tt
+  tttt TTTTT -"TT" TTTT 4 TTTTTTTT tttt
+  t 1 100 1 1 ttt tttt
+TT
+t TTTTT tt ttt tttt ttttt tttttt ttttttt T
+  TTT tttt TTTTT 3
+    TTT ttttt TTTTT 5
+      tttttt TTTTTTTT ttttttt
+      ttttt TTTTT 0
+    TTTTTTT
+      tttttt
+    TTTTTT
+    tttt TTTTT 0
+  TTTTTTT
+    TTT ttttt TTTTT 5
+      ttttttt
+      ttttt TTTTT 0
+    TTTTTTT
+      tt
+    TTTTTT
+  TTTTTT
+  TTT tt TTTTT ttt TTTTT 0
+    t tt TTTTTTTT 1 ttt tttt TTTTTTTT 1 ttttt TTTTTTTT 1 tttttt ttttttt
+  TTTTTT
+TT

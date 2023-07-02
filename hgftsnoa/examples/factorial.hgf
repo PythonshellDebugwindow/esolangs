@@ -1,0 +1,26 @@
+T
+  t 30
+TT
+t TTTTT ttt T
+  TTT ttt TTTTT 0
+    0
+  TTTTTTT
+    ttttttt ttt 1 1
+  TTTTTT
+TT
+ttttttt TTTTT ttt tttt ttttt T
+  TTT ttt TTTTT tttt
+    TTT 0 TTTTTT
+    TTTT tt ttttt tttt 0 0
+  TTTTTTT
+    TTTT ttttttt ttt tttt TTTTTTTT 1 tt ttttt tttt 0 0
+  TTTTTT
+TT
+tt TTTTT ttt tttt ttttt tttttt T
+  TTT ttttt TTTTT tttt
+    TTT 0 TTTTTT
+    TTTT tttttt
+  TTTTTTT
+    TTTT tt ttt tttt ttttt TTTTTTTT 1 tttttt TTTTTTTT ttt
+  TTTTTT
+TT

@@ -1,0 +1,14 @@
+T
+  t 4 0
+TT
+t TTTTT tt ttt T
+  TTT tt TTTTT 0
+    TTT 0 TTTTTT
+    TTTT ttt TTTTTTTT 1
+  TTTTTT
+  TTT ttt TTTTT 0
+    TTT 0 TTTTTT
+    TTTT t tt TTTTTTTT -1 1
+  TTTTTT
+  TTTT t tt TTTTTTTT -1 t tt ttt TTTTTTTT -1
+TT
