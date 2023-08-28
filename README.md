@@ -17,6 +17,7 @@ Interpreters for esolangs.
 * [Line Feed](https://www.esolangs.org/wiki/Line_Feed)
 * [N Refine](https://esolangs.org/wiki/N_Refine)
 * [NyaScript](https://www.esolangs.org/wiki/Nyascript)
+* [PlusIntMinus](https://esolangs.org/wiki/PlusOrMinus#PlusIntMinus)
 * [PlusOrMinus](https://www.esolangs.org/wiki/PlusOrMinus)
 * [PlusOrMinus 2](https://www.esolangs.org/wiki/PlusOrMinus_2)
 * [Queuenanimous](https://www.esolangs.org/wiki/Queuenanimous)
