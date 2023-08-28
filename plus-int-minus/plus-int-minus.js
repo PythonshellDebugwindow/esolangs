@@ -86,6 +86,10 @@ function plusIntMinus(program, isOriginal)
       else
       {
         ++accumulator;
+        if(accumulator > maximumAccumulatorValue)
+        {
+          accumulator = 0;
+        }
       }
     }
     else if(token.type === TokenTypes.MINUS)
