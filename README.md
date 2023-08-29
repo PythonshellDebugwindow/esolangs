@@ -13,6 +13,7 @@ Interpreters for esolangs.
 * [Depend](https://esolangs.org/wiki/Depend)
 * [Divrac](https://www.esolangs.org/wiki/Divrac)
 * [Eso2D](https://www.esolangs.org/wiki/Eso2D)
+* [Exp](https://www.esolangs.org/wiki/Exp)
 * [HGFTSNOA](https://www.esolangs.org/wiki/HGFTSNOA)
 * [Line Feed](https://www.esolangs.org/wiki/Line_Feed)
 * [N Refine](https://esolangs.org/wiki/N_Refine)
