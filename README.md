@@ -24,6 +24,7 @@ Interpreters for esolangs.
 * [Queuenanimous](https://www.esolangs.org/wiki/Queuenanimous)
 * [Regimin](https://www.esolangs.org/wiki/Regimin)
 * [Simplified Emmental](https://www.esolangs.org/wiki/Simplified_Emmental)
+* [The Temporary Stack](https://www.esolangs.org/wiki/The_Temporary_Stack)
 * [Visify](https://www.esolangs.org/wiki/Visify)
 * [—-](https://www.esolangs.org/wiki/—-)
 * [↑110010000100110110010](https://www.esolangs.org/wiki/↑110010000100110110010)
