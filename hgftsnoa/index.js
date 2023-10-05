@@ -13,15 +13,15 @@ if(process.argv.length > 2)
     }
     else
     {
-      console.log(`Error: ${filename} is a directory`)
+      console.log(`Error: ${filename} is a directory`);
     }
   }
   else
   {
-    console.log(`Error: The file ${filename} does not exist`)
+    console.log(`Error: The file ${filename} does not exist`);
   }
 }
 else
 {
-  console.log(`Error: Missing file operand`)
+  console.log(`Error: Missing file operand`);
 }
