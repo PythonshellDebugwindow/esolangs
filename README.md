@@ -23,6 +23,7 @@ Interpreters for esolangs.
 * [PlusOrMinus 2](https://www.esolangs.org/wiki/PlusOrMinus_2)
 * [Queuenanimous](https://www.esolangs.org/wiki/Queuenanimous)
 * [Regimin](https://www.esolangs.org/wiki/Regimin)
+* [Rotary](https://esolangs.org/wiki/Rotary)
 * [Simplified Emmental](https://www.esolangs.org/wiki/Simplified_Emmental)
 * [The Temporary Stack](https://www.esolangs.org/wiki/The_Temporary_Stack)
 * [Visify](https://www.esolangs.org/wiki/Visify)
