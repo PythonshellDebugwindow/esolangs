@@ -56,7 +56,7 @@ def parse_arguments() -> Tuple[str, bool]:
         for char in arg_rest:
           if char == "c":
             if not skip_next:
-              if program is not None:
+              if program is not None or filename is not None:
                 print("Too many arguments", file=sys.stderr)
                 print_more_information()
                 sys.exit(1)
