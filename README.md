@@ -15,6 +15,7 @@ Interpreters for esolangs.
 * [Eso2D](https://www.esolangs.org/wiki/Eso2D)
 * [Exp](https://www.esolangs.org/wiki/Exp)
 * [HGFTSNOA](https://www.esolangs.org/wiki/HGFTSNOA)
+* [Infinite Goto](https://www.esolangs.org/wiki/Infinite_Goto)
 * [Line Feed](https://www.esolangs.org/wiki/Line_Feed)
 * [N Refine](https://esolangs.org/wiki/N_Refine)
 * [NyaScript](https://www.esolangs.org/wiki/Nyascript)
