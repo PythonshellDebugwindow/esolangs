@@ -25,12 +25,11 @@ def parse(code):
     if len(line) >= 2 and line[0] == "=":
       if line[1:] in ("setup", "click", "update"):
         cur = ("setup", "click", "update").index(line[1:])
-        
       else:
         err("UnrecognizedHeaderError", "Unrecognized header =" + line[1:])
     else:
       if cur > -1:
-        #Uses i+1 b/c Visify lines are 1-based
+        #Uses i + 1 because Visify lines are 1-indexed
         for _ in range(i + 1):
           sections[cur].append("")
         sections[cur].append(line)
@@ -65,7 +64,7 @@ def main():
 
       if arg[0] == "!":
         if len(arg) >= 1:
-          return 1 if parse_arg(arg[1:]) != 1 else 0
+          return 1 if parse_arg(arg[1:]) == 0 else 0
         else:
           err("ValueError", "Nothing to negate")
           
@@ -112,9 +111,7 @@ def main():
           if parse_arg(line[1]) != 0:
             i = parse_arg(line[2])
             continue
-          
-##        elif line[0]=="DEBUG":print("DEBUG",*line[1:])
-##        elif line[0]=="DBGEVAL":print("DEBUG",*map(parse_arg,line[1:]))
+        
         else:
           err("NameError", "Unknown command '" + line[0] + "'")
           
@@ -143,9 +140,4 @@ def main():
     pygame.display.flip()
 
 if __name__ == "__main__":
-  try:
-    main()
-  except Exception as e:
-    err(type(e).__name__, e.args)
-  finally:
-    err("Goodbye", "Goodbye")
+  main()
