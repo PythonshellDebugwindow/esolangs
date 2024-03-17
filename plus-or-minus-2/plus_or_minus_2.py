@@ -2,7 +2,7 @@ import sys
 
 def get_num_rows(lines, num_columns):
   columns = ("".join(line[c] for line in lines) for c in range(num_columns))
-  return min(len(column.rstrip()) for column in columns)
+  return min((len(column.rstrip()) for column in columns), default=0)
 
 def interpret_plus_or_minus_2(program):
   lines = program.split("\n")
