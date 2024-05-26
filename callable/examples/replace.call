@@ -1,0 +1,62 @@
+WHILE-EQ(
+  "", "",
+  PRINT("Haystack: "),
+  VAR-SET("h", INPUT()),
+  PRINT("String to replace: "),
+  VAR-SET("n", INPUT()),
+  WHILE-EQ(
+    VAR-GET("n"), "",
+    PRINT("Please enter a non-empty string.
+"),
+    VAR-SET("n", INPUT())
+  ),
+  PRINT("String to replace with: "),
+  VAR-SET("i", INPUT()),
+  VAR-SET("r", ""),
+  VAR-SET("run loop", "1"),
+  WHILE-EQ(
+    VAR-GET("run loop"), "1",
+
+    VAR-SET("loop", "1"),
+    VAR-SET("found", ""),
+    VAR-SET("old h", VAR-GET("h")),
+    WHILE-EQ(
+      VAR-GET("loop"), "1",
+      IF-NEQ(
+        VAR-GET("h"), SUBTRACT(VAR-GET("h"), VAR-GET("n")),
+        VAR-SET("loop", "0")
+      ),
+      IF-EQ(
+        VAR-GET("loop"), "1",
+        IF-EQ(
+          VAR-GET("h"), SUBTRACT(VAR-GET("h"), VAR-GET("n")),
+          VAR-SET("char", SEEK(CAT("X", VAR-GET("h")), "X")),
+          VAR-SET("found", CAT(VAR-GET("found"), VAR-GET("char"))),
+          VAR-SET("h", SUBTRACT(VAR-GET("h"), VAR-GET("char")))
+        )
+      ),
+      IF-EQ(
+        VAR-GET("h"), "",
+        VAR-SET("loop", "0")
+      )
+    ),
+    VAR-SET("h", VAR-GET("old h")),
+    
+    IF-EQ(
+      VAR-GET("found"), VAR-GET("h"),
+      VAR-SET("run loop", "0")
+    ),
+    IF-EQ(
+      VAR-GET("run loop"), "1",
+      VAR-SET("r", CAT(
+        CAT(VAR-GET("r"), VAR-GET("found")), VAR-GET("i")
+      )),
+      VAR-SET("h", SUBTRACT(
+        SUBTRACT(VAR-GET("h"), VAR-GET("found")), VAR-GET("n")
+      ))
+    )
+  ),
+  VAR-SET("r", CAT(VAR-GET("r"), VAR-GET("h"))),
+  PRINT(CAT(VAR-GET("r"), "
+"))
+)

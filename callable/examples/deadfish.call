@@ -1,0 +1,89 @@
+VAR-SET("16", "IIIIIIIIIIIIIIII")
+VAR-SET("i", VAR-GET("16"))
+WHILE-NEQ(
+  VAR-GET("i"), "",
+  VAR-SET("256", CAT(VAR-GET("256"), VAR-GET("16"))),
+  VAR-SET("i", SUBTRACT(VAR-GET("i"), "I"))
+)
+
+WHILE-EQ(
+  "", "",
+  PRINT(">> "),
+  VAR-SET("program", INPUT()),
+  WHILE-NEQ(
+    VAR-GET("program"), "",
+    VAR-SET("c", SEEK(CAT("X", VAR-GET("program")), "X")),
+    IF-EQ(
+      VAR-GET("c"), "i",
+      VAR-SET("acc", CAT(VAR-GET("acc"), "I")),
+      IF-EQ(
+        VAR-GET("acc"), VAR-GET("256"),
+        VAR-SET("acc", "")
+      )
+    ),
+    IF-EQ(
+      VAR-GET("c"), "d",
+      VAR-SET("acc", SUBTRACT(VAR-GET("acc"), "I")),
+      IF-EQ(
+        VAR-GET("acc"), VAR-GET("256"),
+        VAR-SET("acc", "")
+      )
+    ),
+    IF-EQ(
+      VAR-GET("c"), "s",
+      VAR-SET("i", VAR-GET("acc")),
+      VAR-SET("res", ""),
+      WHILE-NEQ(
+        VAR-GET("i"), "",
+        VAR-SET("res", CAT(VAR-GET("res"), VAR-GET("acc"))),
+        VAR-SET("i", SUBTRACT(VAR-GET("i"), "I"))
+      ),
+      VAR-SET("acc", VAR-GET("res")),
+      IF-EQ(
+        VAR-GET("acc"), VAR-GET("256"),
+        VAR-SET("acc", "")
+      )
+    ),
+    IF-EQ(
+      VAR-GET("c"), "o",
+      
+      VAR-SET("n", VAR-GET("acc")),
+      VAR-SET("ID", "0"),
+      VAR-SET("digits", "ID"),
+      
+      WHILE-NEQ(
+        VAR-GET("n"), "",
+        VAR-SET("d", "ID"),
+        WHILE-EQ(
+          VAR-GET(VAR-GET("d")), "9",
+          VAR-SET(VAR-GET("d"), "0"),
+          VAR-SET("d", CAT("I", VAR-GET("d"))),
+          VAR-SET("digits", CAT("I", VAR-GET("digits")))
+        ),
+        IF-EQ(VAR-GET(VAR-GET("d")), "8", VAR-SET(VAR-GET("d"), "9")),
+        IF-EQ(VAR-GET(VAR-GET("d")), "7", VAR-SET(VAR-GET("d"), "8")),
+        IF-EQ(VAR-GET(VAR-GET("d")), "6", VAR-SET(VAR-GET("d"), "7")),
+        IF-EQ(VAR-GET(VAR-GET("d")), "5", VAR-SET(VAR-GET("d"), "6")),
+        IF-EQ(VAR-GET(VAR-GET("d")), "4", VAR-SET(VAR-GET("d"), "5")),
+        IF-EQ(VAR-GET(VAR-GET("d")), "3", VAR-SET(VAR-GET("d"), "4")),
+        IF-EQ(VAR-GET(VAR-GET("d")), "2", VAR-SET(VAR-GET("d"), "3")),
+        IF-EQ(VAR-GET(VAR-GET("d")), "1", VAR-SET(VAR-GET("d"), "2")),
+        IF-EQ(VAR-GET(VAR-GET("d")), "0", VAR-SET(VAR-GET("d"), "1")),
+        IF-EQ(VAR-GET(VAR-GET("d")), "", VAR-SET(VAR-GET("d"), "1")),
+        VAR-SET("n", SUBTRACT(VAR-GET("n"), "I"))
+      ),
+      
+      VAR-SET("result", ""),
+      WHILE-NEQ(
+        VAR-GET("digits"), "D",
+        VAR-SET("result", CAT(VAR-GET("result"), VAR-GET(VAR-GET("digits")))),
+        VAR-SET(VAR-GET("digits"), ""),
+        VAR-SET("digits", SUBTRACT(VAR-GET("digits"), "I"))
+      ),
+      
+      PRINT(CAT(VAR-GET("result"), "
+"))
+    ),
+    VAR-SET("program", SUBTRACT(VAR-GET("program"), VAR-GET("c")))
+  )
+)

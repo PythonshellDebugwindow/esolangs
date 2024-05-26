@@ -1,0 +1,5 @@
+WHILE-EQ(
+  "", "",
+  PRINT(CAT(INPUT(), "
+"))
+)
