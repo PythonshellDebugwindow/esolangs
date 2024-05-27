@@ -1,0 +1,26 @@
+PRINT("Program: ")
+VAR-SET("p", INPUT())
+PRINT("Initial data-string: ")
+VAR-SET("d", INPUT())
+
+IF-EQ(VAR-GET("p"), "", VAR-SET("d", ""))
+WHILE-NEQ(
+  VAR-GET("d"), "",
+  VAR-SET("c", SEEK(CAT("X", VAR-GET("p")), "X")),
+  VAR-SET("p", CAT(SUBTRACT(VAR-GET("p"), VAR-GET("c")), VAR-GET("c"))),
+  IF-EQ(
+    VAR-GET("c"), "0",
+    VAR-SET("d", SUBTRACT(VAR-GET("d"), SEEK(CAT("X", VAR-GET("d")), "X")))
+  ),
+  IF-EQ(
+    VAR-GET("c"), "1",
+    VAR-SET("c", SEEK(CAT("X", VAR-GET("p")), "X")),
+    VAR-SET("p", CAT(SUBTRACT(VAR-GET("p"), VAR-GET("c")), VAR-GET("c"))),
+    IF-EQ(
+      SEEK(CAT("X", VAR-GET("d")), "X"), "1",
+      VAR-SET("d", CAT(VAR-GET("d"), VAR-GET("c")))
+    )
+  ),
+  PRINT(CAT("Data-string: ", CAT(VAR-GET("d"), "
+")))
+)
