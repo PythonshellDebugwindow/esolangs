@@ -3,6 +3,7 @@ Interpreters for esolangs.
 
 ## Esolangs included
 * [_](https://www.esolangs.org/wiki/＿)
+* [1066](https://www.esolangs.org/wiki/1066)
 * [Alphaprint](https://www.esolangs.org/wiki/Alphaprint)
 * Base2
 * [Blues machine](https://www.esolangs.org/wiki/Blues_machine)
