@@ -29,5 +29,6 @@ Interpreters for esolangs.
 * [Simplified Emmental](https://www.esolangs.org/wiki/Simplified_Emmental)
 * [The Temporary Stack](https://www.esolangs.org/wiki/The_Temporary_Stack)
 * [Visify](https://www.esolangs.org/wiki/Visify)
+* [Yaren](https://www.esolangs.org/wiki/Yaren)
 * [—-](https://www.esolangs.org/wiki/—-)
 * [↑110010000100110110010](https://www.esolangs.org/wiki/↑110010000100110110010)
