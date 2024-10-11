@@ -1,0 +1,3 @@
+=main.2kwl!
+  print "=main.2kwl!";
+  print import print "main.2kwl" | "";

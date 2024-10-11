@@ -1,0 +1,8 @@
+=main.2kwl!
+  import 0;
+  import "\0.2kwl";
+=1.2kwl
+  print "1";
+  import "1.2kwl";
+=0.2kwl
+  print "0";

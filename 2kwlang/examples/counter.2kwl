@@ -1,0 +1,31 @@
+=main.2kwl!
+  import 0;
+  print "\0" | "" > "max";
+  print 1 | "" > "n";
+  import "inc.2kwl";
+=inc.2kwl
+  print ""                               > "range.test";
+  print "import \"range.test."      | "" > "range.test";
+  print ""                               > "makerange.2kwl";
+  print "print "                    | "" > "makerange.2kwl";
+  print import print "n"            | "" > "makerange.2kwl";
+  print " <= "                      | "" > "makerange.2kwl";
+  print import print "max"          | "" > "makerange.2kwl";
+  print " | \"\" > \"range.test\";" | "" > "makerange.2kwl";
+  import "makerange.2kwl";
+  print "\"; import \"rangesucceeded.2kwl\";" | "" > "range.test";
+  import "range.test";
+=rangesucceeded.2kwl
+  print ""                              > "count.2kwl";
+  print "print "                   | "" > "count.2kwl";
+  print import print "n"           | "" > "count.2kwl";
+  print "; print \"\" > \"m\";"    | "" > "count.2kwl";
+  print "print "                   | "" > "count.2kwl";
+  print import print "n"           | "" > "count.2kwl";
+  print " + 1 | \"\" > \"m\";"     | "" > "count.2kwl";
+  print "print \"\" > \"n\";"      | "" > "count.2kwl";
+  print "print import print \"m\"" | "" > "count.2kwl";
+  print " > \"n\";"                     > "count.2kwl";
+  print "import \"inc.2kwl\";"     | "" > "count.2kwl";
+  import "count.2kwl";
+=range.test.1
