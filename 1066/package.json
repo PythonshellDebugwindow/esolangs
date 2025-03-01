@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "nearley": "^2.20.1",
+    "readline-sync": "^1.4.10"
+  }
+}
