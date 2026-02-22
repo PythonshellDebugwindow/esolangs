@@ -3,6 +3,7 @@ Interpreters for esolangs.
 
 ## Esolangs included
 * [_](https://esolangs.org/wiki/＿)
+* [/gɹəʊguː/](https://esolangs.org/wiki//gɹəʊguː/)
 * [1066](https://esolangs.org/wiki/1066)
 * [2KWLang](https://esolangs.org/wiki/2KWLang)
 * [Alphaprint](https://esolangs.org/wiki/Alphaprint)
