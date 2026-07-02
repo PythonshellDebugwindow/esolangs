@@ -19,6 +19,7 @@ Interpreters for esolangs.
 * [Exp](https://esolangs.org/wiki/Exp)
 * [HGFTSNOA](https://esolangs.org/wiki/HGFTSNOA)
 * [Infinite Goto](https://esolangs.org/wiki/Infinite_Goto)
+* [Insanity](https://esolangs.org/wiki/Insanity)
 * [Interstack](https://esolangs.org/wiki/Interstack)
 * [Line Feed](https://esolangs.org/wiki/Line_Feed)
 * [N Refine](https://esolangs.org/wiki/N_Refine)
