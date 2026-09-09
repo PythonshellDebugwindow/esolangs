@@ -68,7 +68,7 @@ async function interpret(program) {
 
   interpreterLoop:
   for(let i = 0; i < program.length; ++i) {
-    switch(program.charAt(i)) {
+    switch(program[i]) {
       case "+":
         stack.push(valueCell);
         valueCell = 0;
@@ -165,9 +165,9 @@ async function interpret(program) {
         }
         loopCounters.pop();
         for(let depth = 1; i < program.length; ++i) {
-          if(program.charAt(i) === "(") {
+          if(program[i] === "(") {
             ++depth;
-          } else if(program.charAt(i) === ")") {
+          } else if(program[i] === ")") {
             --depth;
             if(depth === 0) {
               break;
@@ -175,12 +175,24 @@ async function interpret(program) {
           }
         }
         break;
+
+      case "/":
+        if(i + 3 >= program.length) {
+          console.error("Error");
+          rl.close();
+          process.exit(1);
+        } else if(program[i + 3] === "(" || program[i + 3] === ")") {
+          exitWithUndefinedBehaviour();
+        } else {
+          program = program.substring(0, i + 3) + ":" + program.substring(i + 4);
+        }
+        break;
     }
   }
 
   rl.close();
 
-  if(percentSignCount >= 2 && program.charAt(program.length - 1) !== ".") {
+  if(percentSignCount >= 2 && program[program.length - 1] !== ".") {
     console.error("Error: more than one `%' was used, but the program didn't end with `.'");
     process.exit(1);
   }
